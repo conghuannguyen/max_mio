@@ -1,0 +1,13 @@
++ Neu gap "sqlite3.OperationalError: no such table: entries"
+   - Cai nay do chua tao bang truoc do. Vay tao bang nao:
+   - Chay "ipython" hoac "python3": 
+        from flaskr import init_db
+        init_db()
+
++ Neu gap: "RuntimeError: Working outside of application context."
+   - Dont worry! (: 
+   - Them doan code sau vao flaskr.py:
+        with app.app_context():
+            init_db()
+
++ Neu con loi nua thi tu fix nha! ):
